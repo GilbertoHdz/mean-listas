@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>Listas </title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
+<body ng-controller="UbigeoCtrl">
+    <div class="container">
+        <h3>Listas Desplegables en MEAN</h3>
+        <fieldset>
+            <legend>Ubicaciones Geográficas</legend>
+            <label>Departamentos :</label>
+            <select ng-model="dpto" ng-change="cargarProv()" ng-options="d.coddep as d.desdep for d in dptos"></select>
+            <label>Provincias :</label>
+            <select ng-model="prov" ng-change="cargarDist()">
+                <option ng-repeat="p in provs" value="{{p.codpro}}">{{p.despro}}</option>
+            </select>
+            <label>Distritos :</label>
+            <select ng-model="dist" ng-options="d.coddis as d.desdis for d in dists"></select>
+        </fieldset>
+        <p>Departamento {{ dpto }}</p>
+        <p>Provincia {{ prov }}</p>
+        <p>Distrito {{ dist }}</p>
+    </div>
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/ubigeo.js"></script>
+</body>
+</html>

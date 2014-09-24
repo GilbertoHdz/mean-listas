@@ -1,0 +1,19 @@
+doctype html
+html(lang='es',ng-app='app')
+  head
+    title= titulo
+    link(rel='stylesheet', href='css/bootstrap.css')
+  body(ng-controller='UbigeoCtrl')
+    .container
+      h1(align='center')= titulo
+      fieldset
+        legend Ubicaciones Geográficas
+        label Departamentos :
+        select(ng-model='dpto',ng-change='cargarProv()',ng-options='d.coddep as d.desdep for d in dptos')
+        label Provincias :
+        select(ng-model='prov',ng-change='cargarDist()',ng-options='p.codpro as p.despro for p in provs')
+        label Distritos :
+        select(ng-model='dist',ng-options='d.coddis as d.desdis for d in dists')
+
+    script(type='text/javascript',src='js/angular.js')
+    script(type='text/javascript',src='js/ubigeo.js')

@@ -1,0 +1,16 @@
+{
+  "name": "mean-listas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.4",
+    "jade": "^1.7.0",
+    "mongodb": "^1.4.12"
+  }
+}
