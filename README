@@ -1,0 +1,8 @@
+LISTAS DESPLEGABLES CON MONGODB, EXPRESS (CON JADE), ANGULAR Y NODEJS
+---------------------------------------------------------------------
+
+Código del videotutorialindicado, actualizado al 24-Set-2014, clónalo y luego recuerda usar npm install dentro de la carpeta para que se instalen las dependencias
+
+- Adjunto las colecciones en la carpeta material para restaurarlo con mongorestore.
+
+Más información en : 
